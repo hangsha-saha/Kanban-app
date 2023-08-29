@@ -56,4 +56,4 @@ Actions:
 
 
 Edit:
-![Screenshot (11)](https://github.com/hangsha-saha/Kanban-app/assets/125459168/f4791300-622a-48f9-85aa-e0af8515faa6)
+![Screenshot (12)](https://github.com/hangsha-saha/Kanban-app/assets/125459168/5ecd54f7-062d-4d93-ad97-735d3ea9493f)
