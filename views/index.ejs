@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All Tasks</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <style>
+   
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.task-list-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.task-table th,
+.task-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.task-table th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.add-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.add-task-button-container {
+  text-align: center;
+}
+
+.add-task-button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add-task-button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .task-table th,
+  .task-table td {
+    padding: 8px;
+  }
+}
+a{
+  text-decoration: none;
+}
+
+body {
+  background-color: #b4b4b4;
+}
+#btn1{
+      margin-left: 600px;
+      
+    }
+    #btn2{
+      margin-right: 600px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1><span>📋</span> All Tasks</h1>
+      </header>
+      
+  <div class="task-list-section">
+    <h2>To Do</h2>
+    <table class="task-table">
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+      </tr>
+      <% tasks.filter(task => task.status === 'To Do').forEach(task => { %>
+        <tr>
+          <td><%= task.title %></td>
+          <td><%= task.description %></td>
+        </tr>
+      <% }); %>
+    </table>
+  </div>
+
+  <div class="task-list-section">
+    <h2>Doing</h2>
+    <table class="task-table">
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+      </tr>
+      <% tasks.filter(task => task.status === 'Doing').forEach(task => { %>
+        <tr>
+          <td><%= task.title %></td>
+          <td><%= task.description %></td>
+        </tr>
+      <% }); %>
+    </table>
+  </div>
+
+  <div class="task-list-section">
+    <h2>Done</h2>
+    <table class="task-table">
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+      </tr>
+      <% tasks.filter(task => task.status === 'Done').forEach(task => { %>
+        <tr>
+          <td><%= task.title %></td>
+          <td><%= task.description %></td>
+        </tr>
+      <% }); %>
+    </table>
+  </div>
+  <div class="add-buttons-container">
+    <div class="add-task-button-container" id="btn1">
+      <a href="/add" class="add-task-button"><span>➕</span> Add a Task</a>
+    </div>
+  
+    <div class="add-task-button-container" id="btn2">
+      <a href="/actions" class="add-task-button"><span>⚙️</span> Actions</a>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
