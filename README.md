@@ -15,7 +15,16 @@ Edit Task: Tailor your tasks as they evolve with the option to edit task titles 
 Delete Task: Effortlessly remove tasks with a built-in feature that ensures your workspace remains tidy and optimized.
 Task Status: Embrace the power of drag-and-drop functionality, allowing you to move tasks fluidly across To Do, Doing, and Done categories.
 Responsive Design: Experience a consistently delightful user experience across devices – whether on desktop or mobile – with a design that adapts seamlessly.
+
 ⚙️ Back-end Reliability:
 
 API Operations: Our backend is built to support essential CRUD (Create, Read, Update, Delete) operations, ensuring seamless task management.
 Database Integration: Tasks are stored securely in a database, preserving your data while maintaining efficiency.
+Index:
+![Screenshot (8)](https://github.com/hangsha-saha/Kanban-app/assets/125459168/6ec3fe3b-3fb5-4cd5-a4ab-317bd307e308)
+Add Task:
+![Screenshot (9)](https://github.com/hangsha-saha/Kanban-app/assets/125459168/0749ebca-a277-446b-bdc5-5564d235c63a)
+Actions:
+![Screenshot (10)](https://github.com/hangsha-saha/Kanban-app/assets/125459168/7bbb51dc-75b1-4461-80d8-52080d01f774)
+Edit:
+![Screenshot (11)](https://github.com/hangsha-saha/Kanban-app/assets/125459168/f4791300-622a-48f9-85aa-e0af8515faa6)
